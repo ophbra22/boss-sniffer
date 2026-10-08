@@ -1,0 +1,6 @@
+# Keep bundled template libraries out of the repository's language statistics.
+assets/** linguist-vendored -whitespace
+samples/*.json linguist-generated
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf

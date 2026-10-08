@@ -1,0 +1,5 @@
+# Copy to settings.dat to use your own local label and blacklist.
+# This dashboard aggregates one local agent; WORKERS labels blacklist alerts.
+WORKERS = local-agent:127.0.0.1
+# Documentation-only IP address used by the synthetic demo.
+BLACKLIST = 203.0.113.10:demo-blocked-host

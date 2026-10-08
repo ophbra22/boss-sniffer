@@ -1,0 +1,26 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration, reports, and packet captures
+settings.dat
+settings (1).dat
+output/
+temp.html
+*.pcap
+*.pcapng
+*.log
+.env
+.env.*
+
+# Editors, OS metadata, and legacy executables
+.idea/
+.vscode/
+.DS_Store
+desktop.ini
+*.exe
