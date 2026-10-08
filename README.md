@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/ophbra22/boss-sniffer/actions/workflows/tests.yml/badge.svg)](https://github.com/ophbra22/boss-sniffer/actions/workflows/tests.yml)
 
-A Python network traffic analyzer originally built as a **Magshimim networking project**. A local agent captures IPv4 TCP/UDP packet metadata, sends it to a manager over TCP, and generates an HTML dashboard with traffic statistics and IP blacklist alerts.
+A Python network traffic analyzer. A local agent captures IPv4 TCP/UDP packet metadata, sends it to a manager over TCP, and generates an HTML dashboard with traffic statistics and IP blacklist alerts.
 
 This repository preserves the original three-part architecture and dashboard, with compatibility fixes, clearer setup, and regression tests.
 
@@ -149,9 +149,3 @@ Tests cover packet direction and remote ports, short captures, missing Ethernet 
 - The manager listens only on loopback and has no authentication. It is intended for a local educational demo, not deployment as a public service.
 - Captures cover one IPv4 interface. IPv6, packet payload inspection, multi-agent attribution, persistent storage, and live browser refresh are outside this project's scope.
 - The manager retains records in memory for its current session. Restart it between short captures; long sessions can use increasing memory and report-generation time.
-
-## Project history
-
-The cleanup keeps the original capture → TCP → statistics → HTML flow. Changes focus on portability, correctness, and making the project easy to run and review. The historical external report uploader is no longer used; reports stay local. See [maintenance notes](docs/maintenance.md).
-
-The original dashboard is based on the UiPasta WebRes template. Bundled third-party assets retain their original notices; see [third-party credits](docs/third-party.md).
